@@ -5,7 +5,7 @@ const path = require('path');
 require('@testing-library/jest-dom');
 
 
-const html = fs.readFileSync(path.resolve(__dirname, 'index.html'), 'utf-8');
+const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf-8');
 
 const { window } = new JSDOM(html);
 global.document = window.document;
