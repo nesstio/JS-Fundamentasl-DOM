@@ -1,4 +1,11 @@
+const path = require('path');
+const { JSDOM } = require('jsdom');
+const fs = require('fs');
 
+const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf-8');
+
+const { window } = new JSDOM(html);
+global.document = window.document;
 const getUserData = require("../task4.js");
 
 test("Отримання даних користувача", () => {

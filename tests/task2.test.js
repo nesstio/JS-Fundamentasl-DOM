@@ -1,4 +1,3 @@
-const applyStyles = require('../task2.js');
 const { JSDOM } = require('jsdom');
 const fs = require('fs');
 const path = require('path');
@@ -10,8 +9,13 @@ const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf-8');
 const { window } = new JSDOM(html);
 global.document = window.document;
 
+
+const applyStyles = require('../task2.js');
+
+
+
 test('Застосовує стилі до елементу', () => {
-  applyStyles();
+   applyStyles();
 
   const styledElement = document.getElementById('title');
   const firstPar = document.getElementById("myDiv").children[0];
