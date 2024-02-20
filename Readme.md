@@ -1,4 +1,4 @@
-Завдання на тема DOM(Document Object Model)
+Завдання на тему DOM(Document Object Model)
 
 Переконайся що в тебе встановлений Node js
 
