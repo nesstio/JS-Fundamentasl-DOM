@@ -7,8 +7,8 @@
 
 
 module.exports = {
-    name,
-    phoneNumber,
-    dataOfBirth,
-    emailAddress
+    name: document.querySelector("input[name = fio]").value,
+    phoneNumber: document.querySelector("input[name=phone]").value,
+    dataOfBirth: document.querySelector("input[name=birthday]").value,
+    emailAddress:document.querySelector("input[name=email]").value,
 };

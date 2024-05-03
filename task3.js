@@ -17,9 +17,20 @@
 
 
 function applyStyles() {
+    const mainTag = document.createElement("main");
+    document.getElementsByClassName("create_elements")[0].append(mainTag);
+    mainTag.classList.add("mainClass");
+    mainTag.classList.add("check");
+    mainTag.classList.add("item");
 
+    const divTag = document.createElement("div");
+    document.getElementsByClassName("mainClass")[0].append(divTag);
+    divTag.id = "myDiv";
+
+    const pTag = document.createElement("p");
+    divTag.appendChild(pTag);
+    pTag.append("First paragraph");
 }
-
 
 
 

@@ -9,9 +9,9 @@
 
 
 module.exports = {
-  firstEl,
-  lastEl,
-  secondtEl,
-  fourthEl,
-  thirdtEl,
+  firstEl: document.getElementById('list').firstElementChild.textContent,
+  lastEl: document.getElementById('list').lastElementChild.textContent,
+  secondtEl: document.getElementById('list').children[1].textContent,
+  fourthEl: document.getElementById('list').children[3].textContent,
+  thirdtEl: document.getElementById('list').children[2].textContent
 };
